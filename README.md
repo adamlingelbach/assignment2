@@ -1,2 +1,1 @@
-# assignment2
-assignment 2
+# Groupt 20: Adam Lingelbach, Christopher Manrreza, Jackson Wheeler
