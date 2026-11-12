@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Two Stories, One Dataset | CMSC471</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">CMSC471 Assignment 2</p>
+            <h1>Two Stories, One Dataset</h1>
+            <p class="lede">TODO (teammates): Write the project introduction.</p>
+        </header>
+
+        <section class="story-panel" aria-labelledby="white-title">
+            <div class="section-header">
+                <span class="tag">WHITE HAT: TRANSPARENT</span>
+                <h2 id="white-title">How do allegation outcomes differ by misconduct category?</h2>
+            </div>
+
+            <div class="story-body">
+                <p class="section-intro">TODO (teammates): Write or revise the content for How do allegation outcomes differ by misconduct category?.</p>
+
+                <div class="controls">
+                    <label for="category-filter">Misconduct category</label>
+                    <select id="category-filter">
+                        <option value="All">All categories</option>
+                        <option value="Abuse of Authority">Abuse of Authority</option>
+                        <option value="Force">Force</option>
+                        <option value="Discourtesy">Discourtesy</option>
+                        <option value="Offensive Language">Offensive Language</option>
+                    </select>
+                </div>
+
+                <p aria-live="polite" class="summary" id="white-summary"></p>
+                <div class="chart" id="white-chart"></div>
+
+                <p class="note">TODO (teammates): Write or revise the content for How do allegation outcomes differ by misconduct category?.</p>
+
+                <div class="subsection">
+                    <h3>White-hat design write-up</h3>
+                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
+                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
+                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
+                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-panel" aria-labelledby="black-title">
+            <div class="section-header">
+                <span class="tag dark">BLACK HAT: DELIBERATELY MISLEADING</span>
+                <h2 id="black-title">Most reviewed allegations did not result in substantiation</h2>
+            </div>
+
+            <div class="story-body">
+                <p class="subtle section-intro" id="black-description">TODO (teammates): Write a short introduction to the black-hat chart.</p>
+
+                <div class="chart" id="black-chart"></div>
+
+                <button aria-controls="reveal-explanation" aria-pressed="false" class="reveal-button" id="reveal-button" type="button">
+                    Reveal the manipulation
+                </button>
+
+                <div class="note" hidden="" id="reveal-explanation">
+                    <strong>TODO (teammates):</strong> Explain the misleading techniques revealed by the interaction.
+                </div>
+
+                <div class="subsection">
+                    <h3>Black-hat manipulation disclosure</h3>
+                    <p>TODO (teammates): Write or revise the content for Black-hat manipulation disclosure.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Black-hat design write-up</h3>
+                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
+                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
+                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
+                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-panel">
+            <div class="content-stack">
+                <h2>Data, methods, and limitations</h2>
+                <p>TODO (teammates): Write or revise the content for Data, methods, and limitations.</p>
+                <p>TODO (teammates): Write or revise the content for Data, methods, and limitations.</p>
+
+                <h2>Development process and team contributions</h2>
+                <p>TODO (teammates): Write or revise the content for Development process and team contributions.</p>
+                <p>TODO (teammates): Write or revise the content for Development process and team contributions.</p>
+
+                <h2>AI usage disclosure</h2>
+                <p>TODO (teammates): Write or revise the content for AI usage disclosure.</p>
+
+                <h2>Extra credit feature: Reveal the manipulation</h2>
+                <p>TODO (teammates): Write or revise the content for Extra credit feature: Reveal the manipulation.</p>
+            </div>
+        </section>
+
+        <footer class="site-footer">TODO (teammates): Finalize footer and credits.</footer>
+    </main>
+
+    <div class="tooltip" hidden="" id="tooltip" role="status"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/whitehat.js"></script>
+    <script src="js/blackhat.js"></script>
+</body>
+
+</html>
