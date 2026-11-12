@@ -39,14 +39,14 @@ function renderWhiteHat(rows, selected = 'All') {
     let visibleTotal = 0;
 
     categories.forEach((category) => {
-        const categoryRows = rows.filter((row) => row.fado_type === category);
+        const categoryRows = rows.filter((row) => row.category === category);
         const total = d3.sum(categoryRows, (row) => row.count);
         visibleTotal += total;
 
         let runningTotal = 0;
 
         OUTCOME_GROUPS.forEach((groupName) => {
-            const count = categoryRows.find((row) => row.outcome_group === groupName)?.count || 0;
+            const count = categoryRows.find((row) => row.outcome === groupName)?.count || 0;
             const portion = total > 0 ? count / total : 0;
             const label = `${category}: ${groupName}, ${formatNumber(count)} allegations, ${formatPercent(portion)} of ${formatNumber(total)} allegations`;
 

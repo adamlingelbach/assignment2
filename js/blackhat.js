@@ -28,10 +28,10 @@ function renderBlackHat(rows, reveal = false) {
     .call(d3.axisBottom(x).tickValues([0, 0.25, 0.5, 0.75, 1]).tickFormat(d3.format('.0%')));
 
   CATEGORY_ORDER.forEach((category) => {
-    const categoryRows = rows.filter((row) => row.fado_type === category);
+    const categoryRows = rows.filter((row) => row.category === category);
     const total = d3.sum(categoryRows, (row) => row.count);
 
-    const count = (outcomeKey) => categoryRows.find((row) => row.outcome_group === outcomeKey)?.count || 0;
+    const count = (outcomeKey) => categoryRows.find((row) => row.outcome === outcomeKey)?.count || 0;
 
     const segments = reveal
       ? [
