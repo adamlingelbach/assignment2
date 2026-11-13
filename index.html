@@ -32,7 +32,7 @@
             </div>
 
             <div class="story-body">
-                <p class="section-intro">TODO (teammates): Write or revise the content for How do allegation outcomes differ by misconduct category?.</p>
+                <p class="section-intro">How do allegation outcomes differ by misconduct category?.</p>
 
                 <div class="controls">
                     <label for="category-filter">Misconduct category</label>
@@ -93,8 +93,16 @@
                 </div>
 
                 <div class="subsection">
-                    <h3>Black-hat manipulation disclosure</h3>
-                    ADAM ADD INTRO PARAGRAPH
+                    <h3>Black-hat Design Write-Up</h3>
+
+                    <p>
+                       For our "black hat" visualization, we made several intentional design decisions to influence how the reader
+                       interprets the data. Our goal was to make it appear that most complaints against officers were not substantiated,
+                       while downplaying the complaints that were substantiated. We used a combination of data transformation, changes to the
+                       visual marks, and a misleading title to guide the reader toward this conclusion. Below, we explain each decision and how 
+                       it contributes to making the visualization misleading.
+                    </p>
+
                     <br>
                     <strong>1. Data Transformation:</strong> We decided to aggregate the unsubstantiated and exonerated because 
                     the officers were not found guilty of those complaints. There is a subtle difference in the defintions of these terms.
@@ -118,33 +126,69 @@
                     not have enough evidence behind them, even though that is not necessarily what the original data shows.
                
                 </div>
-
-                <div class="subsection">
-                    <h3>Black-hat design write-up</h3>
-                    <p>ADAM TALK ABOUT DESIGN DECISIONS </p>
-                </div>
             </div>
         </section>
 
         <section class="info-panel">
             <div class="content-stack">
                 <h2>Data, methods, and limitations</h2>
-                <p>TODO (teammates): Write or revise the content for Data, methods, and limitations.</p>
-                <p>TODO (teammates): Write or revise the content for Data, methods, and limitations.</p>
+                <p>
+                    Data Source: ProPublica — Civilian Complaints Against New York City Police Officers (2020)
+                    https://www.propublica.org/datastore/dataset/civilian-complaints-against-new-york-city-police-officers
+                    <br><br>
+                    The dataset contains over 12,000 civilian complaints filed against NYPD officers between 1985 and 2020. 
+                    It includes information about the officers and people filing complaints, such as age, race, gender, rank, and precinct.
+                    It also includes the type of complaint and whether the CCRB found the officer violated department rules.
+                    However, we decided just to focus on the subset of the complaint type, and outcome of complaint.
+                    ProPublica collected the data through a public records requests.
+                    One limitation is that the data relies on the NYPD to provide evidence, such as body camera footage, which can make it difficult to reach a conclusion.
+                    Another limitation is that the dataset only includes officers who were still in NYPD in June 2020 and had at least one substantiated complaint.
+
+                </p>
 
                 <h2>Development process and team contributions</h2>
                 <p>TODO (teammates): Write or revise the content for Development process and team contributions.</p>
                 <p>TODO (teammates): Write or revise the content for Development process and team contributions.</p>
 
                 <h2>AI usage disclosure</h2>
-                <p> ADAM WILL DO THIS </p>
+                <p> Throughout our development of this assignment, we used AI to help us in 2 ways.
+
+                    The first way we used AI to help us was for brainstorming how we could make the 
+                    visualization purposefully misleading. The first thing as a group we needed to understand
+                    was the meaning of the vocabulary within our dataset. AI was helpful in explaining 
+                    terms we had never heard of through using simple analogies. Once we understood what
+                    Unsubstantiated, Substantiated, and Exonerated meant in the context of the NYPD officers,
+                    we decided to aggregate the data into two categories instead of the original three for the "black hat" visualization. 
+                    We wanted to be purposefully misleading with our data aggregation, so we split the data into
+                    "Substantiated" or "Not substantiated" to describe the outcome of the civilian complaints. 
+                    This in turn helped the data look misleading because many of the complaints did not have substance
+                    to back them up. Furthermore, we used AI in helping us generate the marks to make it so that
+                    the Non-Substantiated bars appeared much darker and more eye catching then the substantiated ones.
+                    <br><br>
+                    The second way we used AI was aiding in the development of creating our 100% stacked bar
+                    chart and the styling of our webpage. When we first started development, we decided as a group to
+                    use a 100% stacked bar chart. We knew that this would be the simplest for our dataset because there
+                    were 3 different categories, within 4 different types of complaints. We prompted AI to give us a good color scheme
+                    for our stacked bar chart. We also used AI for the styling of our webpage, to seperate into clean
+                    sections and boxes to make our webpage more user friendly. For example, we prompted to seperate our page
+                    into clean rounded boxes for the "white hat" and "black hat" visualizations. Lastly,
+                    we used AI to help us come up with the "Reveal The Manipulation / Raw Data" button to demonstrate
+                    how the user can directly see how we manipulated the data. This was a good feature to add
+                    because the comparison from the "white hat" to the "black hat" can be done with just a click.
+                </p>
 
                 <h2>Extra credit feature: Reveal the manipulation</h2>
-                <p>TODO (teammates): Write or revise the content for Extra credit feature: Reveal the manipulation.</p>
+                <p>For our extra credit feature, we decided to add an interactive button to the black hat visualization that allows users to switch to the white hat visualization. 
+                    We wanted to include this feature because it gives viewers the opportunity to directly compare how the same dataset can be presented in two different ways. 
+                    By switching between the visualizations, users can see how combining unsubstantiated and exonerated outcomes, changing colors, and emphasizing certain information can influence how the data is interpreted.
+                   This feature goes beyond simply explaining the misleading techniques because it allows users to visually recognize the differences themselves. 
+                   Our goal was to make the website more interactive while also showing how important transparency and accurate design choices are when presenting data.
+                </p>
+
             </div>
         </section>
 
-        <footer class="site-footer">TODO (teammates): Finalize footer and credits.</footer>
+        <footer class="site-footer">Adam Lingelbach, Chris Manrreza, Jackson Wheeler Assignment 2</footer>
     </main>
 
     <div class="tooltip" hidden="" id="tooltip" role="status"></div>
