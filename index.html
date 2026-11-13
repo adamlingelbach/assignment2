@@ -48,14 +48,25 @@
                 <p aria-live="polite" class="summary" id="white-summary"></p>
                 <div class="chart" id="white-chart"></div>
 
-                <p class="note">TODO (teammates): Write or revise the content for How do allegation outcomes differ by misconduct category?.</p>
 
                 <div class="subsection">
                     <h3>White-hat design write-up</h3>
-                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
-                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
-                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
-                    <p>TODO (teammates): Write or revise the content for White-hat design write-up.</p>
+
+                    <p>For the white hat visualization, we wanted to clearly show how allegation outcomes differ across four categories of within the NYPD.
+                        We used the "Civilian Complaints Against New York City Police Officers" data set. This dataset was compiled by ProPublica and contains civilian complaints filed against NYPD officers. It includes information about the types of alleged misconduct and the outcomes of investigations. 
+                        For our visualization, we focused specifically on comparing the outcomes of allegations across four misconduct categories. We created a horizontal stacked bar chart that compares Abuse of Authority, Force, Discourtesy, and Offensive Language.
+                        The maid difference within this data set is that each category is divided into three possible outcomes: substantiated, unsubstantiated, and exonerated. This was the main design choice that differed with the black-hat because exaunerated really shows a difference, rather than being grouped in with "Unsubstantiated".
+                        These outcomes have different meanings, and separating them allows viewers to better understand the results of the allegations.
+                    </p><p>
+                        We chose a horizontal stacked bar chart because it allows viewers to easily compare the proportions of different outcomes across misconduct categories. 
+                        Rather than displaying the raw number of allegations, we converted the outcomes into percentages so that every bar totals 100%. This makes comparisons easier because some categories may have significantly more allegations than others.
+                        We also chose colors that have a high contrast with eachother whic really highlights the difference.
+                       The horizontal axis runs from 0% to 100%, ensuring that each category is represented on the same scale. Additionally, we included a dropdown menu that allows users to focus on individual misconduct categories or view all four at once.
+                        </p><p>
+                        Overall, our goal was to make the visualization as clear and accurate as possible. By keeping the three outcomes separate, using consistent percentages, and including clear labels, we allow viewers to interpret the data without being influenced by misleading design choices.
+                         We wanted to make sure the visualization accurately represented the differences between misconduct categories while remaining easy for viewers to understand.
+
+                    </p>
                 </div>
             </div>
         </section>
