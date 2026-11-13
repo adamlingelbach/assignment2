@@ -14,7 +14,15 @@
         <header class="page-header">
             <p class="eyebrow">CMSC471 Assignment 2</p>
             <h1>Two Stories, One Dataset</h1>
-            <p class="lede">TODO (teammates): Write the project introduction.</p>
+            <p class="lede">
+                This project looks into complaints against NYPD officers.
+                The purpose of having the two different visualizations is to show a "white hat" visualization
+                which is the first visualization, contrasted with a "black hat" visualization.
+                The "white hat" visualization is to show the data as it is, and effectively so the
+                user can easily interpret what the data is representing.
+                The "black hat" visualization is a manipulation to convey the data in a way that is not
+                accurate.
+            </p>
         </header>
 
         <section class="story-panel" aria-labelledby="white-title">
@@ -59,7 +67,7 @@
             </div>
 
             <div class="story-body">
-                <p class="subtle section-intro" id="black-description">TODO (teammates): Write a short introduction to the black-hat chart.</p>
+                <p class="subtle section-intro" id="black-description"></p>
 
                 <div class="chart" id="black-chart"></div>
 
@@ -68,20 +76,41 @@
                 </button>
 
                 <div class="note" hidden="" id="reveal-explanation">
-                    <strong>TODO (teammates):</strong> Explain the misleading techniques revealed by the interaction.
+                    <strong>
+                        The misleading techniques we used were 1. data transformation, 2. altering the marks, and 3. adding deceptive titles. See below for more details.
+                    </strong>
                 </div>
 
                 <div class="subsection">
                     <h3>Black-hat manipulation disclosure</h3>
-                    <p>TODO (teammates): Write or revise the content for Black-hat manipulation disclosure.</p>
+                    ADAM ADD INTRO PARAGRAPH
+                    <br>
+                    <strong>1. Data Transformation:</strong> We decided to aggregate the unsubstantiated and exonerated because 
+                    the officers were not found guilty of those complaints. There is a subtle difference in the defintions of these terms.
+                    Unsubstantiated means there wasn't enough evidence to decide a verdict.
+                    Exonerated means that conduct occurred, but it was within acceptable policy.
+                    We decided to merge these two categories to be purposefully misleading making it look like
+                    the complaints had no evidence behind them, when in fact Exonerated complaints often involved conduct that did occur.
+                    <br>
+                    <strong>2. Altering the Marks:</strong> We changed how the two remaining segments are drawn so the readers eye 
+                    lands on the outcome we want emphasized. “Not substantiated” is a dark, saturated teal,
+                    while “Substantiated” is a pale gray-blue that blends into the white background and reads
+                    as leftover space rather than a real outcome. We also placed a bold white percentage label
+                    only on the “Not substantiated” segment, so the reader gets an exact number for the dominant
+                    bar but has to hover to learn the substantiated rate. Together, these choices make the substantiated
+                    share look small and unimportant.
+                    <br>
+                    <strong>3. Adding Deceptive Titles:</strong> The title, “Most reviewed allegations did not result in substantiation,” 
+                    immediately gives the reader a conclusion before they have a chance to interpret the chart themselves.
+                    By using this wording, we guide the reader toward thinking that most complaints against officers were not valid.
+                    Combined with the merged categories and altered colors, the title reinforces the message that most complaints did 
+                    not have enough evidence behind them, even though that is not necessarily what the original data shows.
+               
                 </div>
 
                 <div class="subsection">
                     <h3>Black-hat design write-up</h3>
-                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
-                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
-                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
-                    <p>TODO (teammates): Write or revise the content for Black-hat design write-up.</p>
+                    <p>ADAM TALK ABOUT DESIGN DECISIONS </p>
                 </div>
             </div>
         </section>
@@ -97,7 +126,7 @@
                 <p>TODO (teammates): Write or revise the content for Development process and team contributions.</p>
 
                 <h2>AI usage disclosure</h2>
-                <p>TODO (teammates): Write or revise the content for AI usage disclosure.</p>
+                <p> ADAM WILL DO THIS </p>
 
                 <h2>Extra credit feature: Reveal the manipulation</h2>
                 <p>TODO (teammates): Write or revise the content for Extra credit feature: Reveal the manipulation.</p>

@@ -110,12 +110,12 @@ function renderBlackHat(rows, reveal = false) {
 
   d3.select('#black-description').text(
     reveal
-      ? 'The original outcome distinctions are restored; compare this with the persuasive grouping.'
-      : 'A single large segment makes the share of allegations without substantiation appear decisive.'
+      ? 'The original outcome distinctions are restored. Compare this with the persuasive grouping by clicking "Reveal the manipulation"'
+      : 'Percentage of allegations that are unsubstantiated.'
   );
 
   d3.select('#reveal-button')
-    .text(reveal ? 'Return to persuasive view' : 'Reveal the manipulation')
+    .text(reveal ? 'Reveal the manipulation' : 'Reveal the raw non-misleading data')
     .attr('aria-pressed', reveal);
 
   d3.select('#reveal-explanation').property('hidden', !reveal);
